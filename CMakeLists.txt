@@ -670,6 +670,10 @@ foreach(_header ${headers})
 endforeach()
 add_custom_target(add_srsran_headers SOURCES ${HEADERS_ALL})
 
+# jgw
+list (APPEND CMAKE_MODULE_PATH /home/srsRAN/llvm-ir-cmake-utils/cmake)
+include (LLVMIRUtil)
+
 ########################################################################
 # Add the subdirectories
 ########################################################################
