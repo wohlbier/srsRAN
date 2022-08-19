@@ -59,7 +59,7 @@ configure_file(
   ${CMAKE_BINARY_DIR}/SRSRANbuildinfo.cmake
 )
 # jgw
-include(cmake/TraceAtlas.cmake)
+include(cmake/modules/TraceAtlas.cmake)
 ########################################################################
 # Options
 ########################################################################
