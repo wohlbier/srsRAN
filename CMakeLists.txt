@@ -60,6 +60,7 @@ configure_file(
 )
 # jgw
 include(cmake/modules/TraceAtlas.cmake)
+find_package(PAPI REQUIRED)
 ########################################################################
 # Options
 ########################################################################

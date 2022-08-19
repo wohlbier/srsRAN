@@ -4,7 +4,6 @@ set_target_properties(AtlasPasses PROPERTIES IMPORTED_LOCATION /home/TraceAtlas/
 add_library(AtlasBackend PROPERTIES IMPORTED)
 set_target_properties(AtlasBackend PROPERTIES IMPORTED_LOCATION /home/TraceAtlas/lib/libAtlasBackend.so)
 set(LLVM_INSTALL_PREFIX /home/llvm-9.0.1/build)
-find_package(PAPI REQUIRED)
 
 # responsible for injecting the tracer. Fairly fragile so be careful
 function(InjectTracer tar)
