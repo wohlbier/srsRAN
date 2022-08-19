@@ -77,6 +77,8 @@ if(RF_FOUND)
 
   add_executable(cell_search cell_search.c)
   target_link_libraries(cell_search srsran_phy srsran_common srsran_rf)
+  # jgw
+  InjectTracer(cell_search)
 
   add_executable(usrp_capture usrp_capture.c)
   target_link_libraries(usrp_capture srsran_phy srsran_rf)
