@@ -79,6 +79,11 @@ if(RF_FOUND)
   target_link_libraries(cell_search srsran_phy srsran_common srsran_rf)
   # jgw
   InjectTracer(cell_search)
+  InjectMemory(cell_search)
+  InjectInstance(cell_search)
+  MemProfiler(cell_search)
+  LoopDetection(cell_search)
+  InjectLastWriter(cell_search)
 
   add_executable(usrp_capture usrp_capture.c)
   target_link_libraries(usrp_capture srsran_phy srsran_rf)
