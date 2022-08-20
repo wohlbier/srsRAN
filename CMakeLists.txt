@@ -59,8 +59,8 @@ configure_file(
   ${CMAKE_BINARY_DIR}/SRSRANbuildinfo.cmake
 )
 # jgw
-include(cmake/modules/TraceAtlas.cmake)
 find_package(PAPI REQUIRED)
+include(cmake/TraceAtlas.cmake)
 ########################################################################
 # Options
 ########################################################################
